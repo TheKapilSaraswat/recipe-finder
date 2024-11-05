@@ -9,7 +9,7 @@ function App(){
   const [recipes, setRecipes] = useState([]);
 
   const fetchRecipes = async(query) =>{
-    const apiKey= 'LuB1UVjlBaqGvrCvyJ9tZw==yLOxLNyQSpSmXW0e';
+    const apiKey= process.env.REACT_APP_API_KEY;
     const url = `https://api.api-ninjas.com/v1/recipe?query=${query}`;
 
 
